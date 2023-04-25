@@ -1,0 +1,26 @@
+info:
+  contact: {}
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: Hello, World!
+      operationId: Test
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+        "400":
+          description: Hello, World!
+          schema:
+            type: string
+        "404":
+          description: "404"
+          schema:
+            type: string
+      summary: Hello World
+swagger: "2.0"
